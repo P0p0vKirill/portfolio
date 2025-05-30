@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap");
+
+.body {
+  background-color: #282c33;
+  font-family: "Fira Code", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: #abb2bf;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #2c3036;
+}
+
+.active {
+  display: block !important;
+}
+
+.inactive {
+  display: none !important;
+}
+
+a {
+  cursor: pointer;
+}
+/* HEADER */
+
+.header {
+}
+
+.header__top {
+  height: 65px;
+  display: flex;
+  align-items: end;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.navigation__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__text {
+  color: white;
+  padding-left: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 0 32px;
+}
+
+.navigation__item a::before {
+  content: "#";
+  color: #c778dd;
+}
+
+.change-lang {
+  background-color: #2c3036;
+  border: none;
+}
+
+.header__middle {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: 540px 470px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.header__middle-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px 0;
+  max-width: 540px;
+  position: relative;
+}
+
+.header__middle-left h1 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.header__middle-left button {
+  padding: 8px 16px;
+  border: 2px solid #c778dd;
+  max-width: max-content;
+}
+
+.header__midle-right-content {
+  position: relative;
+}
+
+.lng-header-currently {
+  max-width: max-content;
+  display: flex;
+  gap: 0 10px;
+  align-items: center;
+  border: 1px solid;
+  padding: 8px;
+}
+
+.lng-header-currently span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: #c778dd;
+}
+
+.header__midle-right-content::after {
+  content: "";
+  width: 84px;
+  height: 84px;
+  background-image: url(../images/Dots.svg);
+  position: absolute;
+  top: 50%;
+  right: 16px;
+}
+
+.header__midle-right-content::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-image: url(../images/purp-logo.svg);
+  position: absolute;
+  top: 20%;
+  left: -10px;
+}
+
+.form-send-email {
+  /* display: none; */
+  /* max-width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  font-size: 16px;
+  position: absolute;
+  bottom: -32px;
+}
+
+.inputs-name-email {
+  display: flex;
+  gap: 0 16px;
+  justify-content: space-between;
+}
+
+.form-send-email input {
+  border: 1px solid;
+  padding: 8px;
+  flex: 1;
+}
+
+input.btn {
+  /* max-width: max-content;
+  padding: 8px; */
+  border: 2px solid #c778dd;
+}
+
+.btn {
+  max-width: max-content;
+  padding: 8px;
+  border: 2px solid #c778dd;
+}
+
+/* MAIN */
+.chapter {
+  padding-top: 100px;
+}
+
+.chapter__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chapter__title-heading {
+  font-size: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.chapter__title-heading::before {
+  content: "#";
+  width: 20px;
+  height: 42px;
+  color: #c778dd;
+}
+
+.chapter__title-heading::after {
+  content: "";
+  width: 30vw;
+  height: 1px;
+  margin-left: 16px;
+  background-color: #c778dd;
+}
+
+.view-all {
+  display: flex;
+  align-items: center;
+}
+
+.projects__cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 330px);
+  gap: 16px 16px;
+  padding-top: 50px;
+  /* border: 1px solid #ABB2BF; */
+}
+
+.card {
+  border: 1px solid #abb2bf;
+  flex: 0 0 0;
+}
+
+.card__img {
+  max-width: 330px;
+  height: 200px;
+}
+
+.card__img img {
+  height: 100%;
+  object-fit: fill;
+}
+
+.card__tehnology {
+  padding: 8px;
+  border-top: 1px solid #abb2bf;
+  border-bottom: 1px solid #abb2bf;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+}
+
+.card__annotation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}

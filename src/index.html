@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./images/logo-kp.svg" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Popov Kirill</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <nav class="navigation">
+            <div class="navigation__logo">
+              <img
+                src="./images/logo-kp.svg"
+                alt="logo"
+                width="35"
+                height="35"
+              /><span class="logo__text">Popov Kirill</span>
+            </div>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="lng-main">главная</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#projects" class="lng-works">мои работы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="lng-about-me">обо мне</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="lng-contacts">контакты</a>
+              </li>
+              <li class="navigation__item">
+                <select class="change-lang">
+                  <option value="ru">RU</option>
+                  <option value="en">EN</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__middle">
+          <div class="header__middle-left">
+            <h1 class="lng-header-title">
+              Привет, я Кирилл! С 2023 года занимаюсь Frontend-разработкой.
+            </h1>
+            <span class="lng-header-annotation"
+              >Люблю превращать код в удобные и красивые интерфейсы, а ещё —
+              верю, что идеальный border-radius существует.</span
+            >
+            <a class="btn contact-me">Связаться со мной!!!</a>
+            <form
+              class="form-send-email inactive"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="669eb5c1-3398-402c-99a6-c4cc31a652b4"
+              />
+              <div class="inputs-name-email">
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  placeholder="Name"
+                  autocomplete="off"
+                />
+                <input
+                  type="text"
+                  name="email"
+                  required
+                  placeholder="Email"
+                  autocomplete="off"
+                />
+              </div>
+              <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                autocomplete="off"
+              />
+              <input
+                type="text"
+                name="message"
+                required
+                placeholder="Message"
+                autocomplete="off"
+              />
+              <!-- <button type="submit" value="send">Send</button> -->
+              <input type="submit" value="Send" class="btn" />
+            </form>
+          </div>
+          <div class="header__midle-right">
+            <div class="header__midle-right-content">
+              <img src="./images/Image.png" alt="" class="header-image" />
+              <div class="lng-header-currently">
+                <span></span>В настоящее время работаю над портфолио
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <main>
+      <div class="container">
+        <section class="chapter projects" id="projects">
+          <div class="chapter__title">
+            <div class="chapter__title-heading">projects</div>
+            <a href="#" class="view-all"
+              ><img src="./images/arrow.svg" alt="view-all"
+            /></a>
+          </div>
+          <div class="projects__cards">
+            <div class="card">
+              <div class="card__img">
+                <img src="./images/result_Screenshot_3.png" alt="" />
+              </div>
+              <div class="card__tehnology">HTML CSS JS</div>
+              <div class="card__annotation">
+                <div class="card__name">Portfolio</div>
+                <div>My works are stored here</div>
+                <div class="card__links">
+                  <a href="#"><img src="./images/live-button.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./images/result_Screenshot_3.png" alt="" />
+              </div>
+              <div class="card__tehnology">HTML CSS JS</div>
+              <div class="card__annotation">
+                <div class="card__name">Portfolio</div>
+                <div>My works are stored here</div>
+                <div class="card__links">
+                  <a href="#"><img src="./images/live-button.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__img">
+                <img src="./images/result_Screenshot_3.png" alt="" />
+              </div>
+              <div class="card__tehnology">HTML CSS JS</div>
+              <div class="card__annotation">
+                <div class="card__name">Portfolio</div>
+                <div>My works are stored here</div>
+                <div class="card__links">
+                  <a href="#"><img src="./images/live-button.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main> -->
+    <script src="./scripts/lang.js"></script>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
