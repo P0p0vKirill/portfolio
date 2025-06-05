@@ -20,6 +20,8 @@ function changeLanguage() {
   }
 }
 changeLanguage();
+
+// coloring text
 (function titleСoloring() {
   let wordsArr = ["Frontend-разработкой", "Frontend development"];
   let title = document.querySelector(".lng-header-title");
