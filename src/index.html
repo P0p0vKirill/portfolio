@@ -5,6 +5,7 @@
     <link rel="icon" type="image/x-icon" href="./images/logo-kp.svg" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <title>Popov Kirill</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -12,7 +13,7 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <nav class="navigation">
+          <nav class="navigation" id="nav">
             <div class="navigation__logo">
               <img
                 src="./images/logo-kp.svg"
@@ -40,7 +41,18 @@
                   <option value="en">EN</option>
                 </select>
               </li>
+              <li class="links-mobile-menu">
+                <a href="https://github.com/P0p0vKirill" target="_blank"
+                  ><img src="./images/Github.svg" alt=""
+                /></a>
+                <a href="https://t.me/p0p0vi4h" target="_blank"
+                  ><img src="./images/Telegram.svg" alt=""
+                /></a>
+              </li>
             </ul>
+            <button class="nav-button" id="nav-btn">
+              <img src="./images/nav-button-open.svg" alt="" id="nav-btn-img" />
+            </button>
           </nav>
         </div>
         <div class="header__middle">
@@ -106,7 +118,6 @@
         </div>
       </div>
     </header>
-    <!-- MAIN -->
     <main>
       <div class="container">
         <section class="chapter projects" id="projects">
@@ -158,7 +169,6 @@
             </div>
           </div>
         </section>
-        <!-- SKILLS -->
         <section class="chapter skills" id="skills">
           <div class="chapter__title">
             <div class="chapter__title-heading">skills</div>
@@ -173,7 +183,7 @@
                 <img src="./images/logo-kp.svg" alt="" class="skills-logo" />
               </div>
             </div>
-            
+
             <div class="languaches">
               <p>Languaches</p>
               <div>JavaScript TypeScript</div>
@@ -198,61 +208,100 @@
         </section>
         <!-- ABOUT-ME -->
         <section class="chapter about-me" id="about-me">
-            <div class="chapter__title-heading">about-me</div>     
+          <div class="chapter__title-heading">about-me</div>
           <div class="about-me__content">
             <div class="about-me__content-left">
               <span>Привет, меня зовут Кирилл!</span>
-              <span>Когда не пишу код, можно найти меня за столом для пинг-понга, за фортепиано или в кино (особую слабость испытываю к классике с концепциями, выстроенными на природе времени, причинно-следственных связях и формировании личности).</span>
-              <span>Верю, что лучший способ учиться — смеяться над своими ошибками (а их было много). Мечтаю завести собаку, поэтому усердно работаю: каждая строчка кода — это шаг к дому с тёплым комком у ног.  </span>
-              <a href="#" class="btn">Read more &#8594</a>
+              <span
+                >Когда не пишу код, можно найти меня за столом для пинг-понга,
+                за фортепиано или в кино (особую слабость испытываю к классике с
+                концепциями, выстроенными на природе времени,
+                причинно-следственных связях и формировании личности).</span
+              >
+              <span
+                >Верю, что лучший способ учиться — смеяться над своими ошибками
+                (а их было много). Мечтаю завести собаку, поэтому усердно
+                работаю: каждая строчка кода — это шаг к дому с тёплым комком у
+                ног.
+              </span>
+              <a href="#" class="btn">Read more </a>
+              <!-- &#8594 -->
             </div>
             <div class="about-me__content-right">
               <div class="about-me__img">
-                <img src="./images/about-me-img.png" alt="" >
-                <img src="./images/Dots.svg" alt="" class="about-me__dots1">
-                <img src="./images/Dots.svg" alt="" class="about-me__dots2">
+                <img src="./images/about-me-img.png" alt="" />
+                <img src="./images/Dots.svg" alt="" class="about-me__dots1" />
+                <img src="./images/Dots.svg" alt="" class="about-me__dots2" />
               </div>
-              
             </div>
           </div>
         </section>
         <section class="chapter contacts" id="contacts">
-            <div class="chapter__title-heading">contacts</div> 
-            <div class="contacts__content">
-              <p>Хотите обсудить проект или просто поговорить о фильмах Нолана? Пишите!</p>
-              <div class="links">
-                <p>Связаться со мной можно здесь</p>
-                <div class="link"><img src="./images/Email.svg" alt=""><span>kirill.popov.89@yandex.ru</span></div>
-                <div class="link"><img src="./images/Telegram.svg" alt=""><span>@p0p0vi4h</span></div>
-
+          <div class="chapter__title-heading">contacts</div>
+          <div class="contacts__content">
+            <p>
+              Хотите обсудить проект или просто поговорить о фильмах Нолана?
+              Пишите!
+            </p>
+            <div class="links">
+              <p>Связаться со мной можно здесь</p>
+              <div class="link">
+                <img src="./images/Email.svg" alt="" /><span
+                  >kirill.popov.89@yandex.ru</span
+                >
               </div>
-            </div>    
-
-          
+              <div class="link">
+                <img src="./images/Telegram.svg" alt="" /><span>@p0p0vi4h</span>
+              </div>
+            </div>
+          </div>
         </section>
+      </div>
     </main>
     <footer>
       <div class="container">
-       <div class="footer__content">
-        <div class="navigation__logo">
-              <img
-                src="./images/logo-kp.svg"
-                alt="logo"
-                width="35"
-                height="35"
-              /><span class="logo__text">Popov Kirill</span>
+        <div class="footer__content">
+          <div class="navigation__logo">
+            <img
+              src="./images/logo-kp.svg"
+              alt="logo"
+              width="35"
+              height="35"
+            /><span class="logo__text">Popov Kirill</span>
+          </div>
+          <span>Media</span>
+          <div class="link">
+            <img src="./images/Email.svg" alt="" /><span
+              >kirill.popov.89@yandex.ru</span
+            >
+          </div>
+          <div class="footer__media">
+            <a href="https://github.com/P0p0vKirill" target="_blank"
+              ><img src="./images/Github.svg" alt=""
+            /></a>
+            <a href="https://t.me/p0p0vi4h" target="_blank"
+              ><img src="./images/Telegram.svg" alt=""
+            /></a>
+          </div>
+          <p>© Copyright 2025. Made by Popov Kirill</p>
         </div>
-        <span>Media</span>
-        <div class="link"><img src="./images/Email.svg" alt=""><span>kirill.popov.89@yandex.ru</span></div>
-        <div class="footer__media">
-        <a href="https://github.com/P0p0vKirill" target="_blank"><img src="./images/Github.svg" alt=""></a>
-        <a href="https://t.me/p0p0vi4h" target="_blank"><img src="./images/Telegram.svg" alt=""></a>
-        </div>
-        <p>© Copyright 2025. Made by Popov Kirill</p>
-       </div>
       </div>
-      
     </footer>
+
+    <div class="body__links">
+      <a href="https://github.com/P0p0vKirill" target="_blank"
+        ><img src="./images/Github.svg" alt=""
+      /></a>
+      <a href="https://t.me/p0p0vi4h" target="_blank"
+        ><img src="./images/Telegram.svg" alt=""
+      /></a>
+    </div>
+    <img src="./images/Dots.svg" alt="" class="body__dots1" />
+    <img src="./images/Dots.svg" alt="" class="body__dots2" />
+    <img src="./images/Dots.svg" alt="" class="body__dots3" />
+    <img src="./images/big_quare.svg" alt="" class="body__big-quare1" />
+    <img src="./images/big_quare.svg" alt="" class="body__big-quare2" />
+    <img src="./images/small-quare.svg" alt="" class="body__small-quare" />
     <script src="./scripts/lang.js"></script>
     <script src="./scripts/app.js"></script>
   </body>
