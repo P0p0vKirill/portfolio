@@ -22,28 +22,28 @@ function changeLanguage() {
 changeLanguage();
 
 // coloring text
-(function titleСoloring() {
-  let wordsArr = ["Frontend-разработкой", "Frontend development"];
-  let title = document.querySelector(".lng-header-title");
-  for (let phrase of wordsArr) {
-    if (title.innerHTML.includes(phrase))
-      title.innerHTML = title.innerHTML.replace(
-        phrase,
-        `<span style="color:#C778DD">${phrase}</span>`
-      );
-  }
-})();
+// (function titleСoloring() {
+//   let wordsArr = ["Frontend-разработкой", "Frontend development"];
+//   let title = document.querySelector(".lng-header-title");
+//   for (let phrase of wordsArr) {
+//     if (title.innerHTML.includes(phrase))
+//       title.innerHTML = title.innerHTML.replace(
+//         phrase,
+//         `<span style="color:#C778DD">${phrase}</span>`
+//       );
+//   }
+// })();
 
 
 // button-contact-me
 
-const contactMe = document.querySelector('.contact-me')
-const formSend = document.querySelector('.form-send-email')
-contactMe.addEventListener('click', contactMeNone);
-function contactMeNone() {
-  contactMe.classList.add('inactive')
-  formSend.classList.remove('inactive')
-}
+// const contactMe = document.querySelector('.contact-me')
+// const formSend = document.querySelector('.form-send-email')
+// contactMe.addEventListener('click', contactMeNone);
+// function contactMeNone() {
+//   contactMe.classList.add('inactive')
+//   formSend.classList.remove('inactive')
+// }
 
 // nav-btn
 const nav = document.querySelector("#nav");

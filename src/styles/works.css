@@ -1,0 +1,40 @@
+.chapter__title-heading::after {
+    display: none;
+}
+
+.main__title {
+    padding-top: 50px;
+        white-space: nowrap;
+    max-width: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.main__title::before {
+    content: "/";
+    width: 20px;
+    height: 42px;
+    color: #c778dd;   
+}
+
+.main__title__annotation {
+    padding-top: 15px;
+    /* color: white; */
+}
+
+.projects {
+    padding-top: 80px;
+}
+
+.small-projects__technologies {
+    padding: 8px;
+    border-bottom: 1px solid #abb2bf;
+}
+
+.small-projects {
+    padding-bottom: 150px;
+}
+

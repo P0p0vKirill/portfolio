@@ -64,9 +64,6 @@
 
   /* nav-button */
 
-  .navigation {
-    align-items: start;
-  }
   .nav-button {
     display: block;
   }
@@ -77,8 +74,16 @@
 
   .navigation.open .nav-button {
     position: fixed;
-    top: 30px;
-    right: 20px;
+    top: 47px;
+    right: 16px;
+  }
+
+  .navigation.open .nav-button::after {
+    transform: rotate(-45deg) translate(30px, 30px);
+  }
+
+  .navigation.open .nav-button::before {
+    transform: rotate(45deg) translate(30px, -30px);
   }
 
   .navigation.open .navigation__list {
@@ -113,7 +118,7 @@
     z-index: 2;
     justify-content: start;
     align-items: start;
-    padding: 25px;
+    padding: 31px 20px 0 20px;
     font-size: 32px;
   }
 }
@@ -125,11 +130,6 @@
 
   .projects__cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card__annotation {
-    padding: 10px;
-    gap: 8px;
   }
 
   .contacts__content > p {
