@@ -1,0 +1,28 @@
+.chapter__title-heading::after {
+  display: none;
+}
+.contacts {
+    padding-top: 0;
+    min-height: 100vh;
+}
+
+
+.main__title {
+  padding-top: 50px;
+  white-space: nowrap;
+  max-width: 50%;
+  font-size: 32px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.main__title::before {
+  content: "/";
+  width: 20px;
+  height: 42px;
+  color: #c778dd;
+}
+

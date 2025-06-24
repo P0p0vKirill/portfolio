@@ -4,13 +4,14 @@
 
 .main__title {
     padding-top: 50px;
-        white-space: nowrap;
+    white-space: nowrap;
     max-width: 50%;
     font-size: 32px;
     font-weight: 500;
     display: flex;
     align-items: center;
     color: white;
+    padding-bottom: 15px;
 }
 
 .main__title::before {
@@ -20,12 +21,8 @@
     color: #c778dd;   
 }
 
-.main__title__annotation {
-    padding-top: 15px;
-    /* color: white; */
-}
 
-.projects {
+.chapter{
     padding-top: 80px;
 }
 

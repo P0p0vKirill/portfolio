@@ -4,15 +4,18 @@ select.addEventListener("change", changeURLLanguage);
 function changeURLLanguage() {
   let lang = select.value;
   location.href = window.location.pathname + "#" + lang;
+  // location.reload();
+  // changeLanguage();
   location.reload();
 }
 function changeLanguage() {
   let hash = window.location.hash;
+  if (!hash) return;
   hash = hash.slice(1);
-  if (!allLangs.includes(hash)) {
-    location.href = window.location.pathname + "#ru";
-    location.reload();
-  }
+  // if (!allLangs.includes(hash)) {
+  //   location.href = window.location.pathname + "#ru";
+  //   location.reload();
+  // }
   select.value = hash;
   for (key in langArr) {
     let el = document.querySelector(".lng-" + key);
@@ -34,24 +37,28 @@ changeLanguage();
   }
 })();
 
-
 // button-contact-me
 
-const contactMe = document.querySelector('.contact-me')
-const formSend = document.querySelector('.form-send-email')
-contactMe.addEventListener('click', contactMeNone);
+const contactMe = document.querySelector(".contact-me");
+const formSend = document.querySelector(".form-send-email");
+const headerMiddleLeft = document.querySelector(".header__middle-left");
+contactMe.addEventListener("click", contactMeNone);
 function contactMeNone() {
-  contactMe.classList.add('inactive')
-  formSend.classList.remove('inactive')
+  formSend.style.top = `${
+    contactMe.getBoundingClientRect().top -
+    headerMiddleLeft.getBoundingClientRect().top
+  }px`;
+  contactMe.classList.add("inactive");
+  formSend.classList.remove("inactive");
 }
 
 // nav-btn
 const nav = document.querySelector("#nav");
 const navBtn = document.querySelector("#nav-btn");
 navBtn.onclick = () => {
-  if (nav.classList.toggle('open')){
-    navBtn.classList.add('transform-nav-btn')
+  if (nav.classList.toggle("open")) {
+    navBtn.classList.add("transform-nav-btn");
   } else {
-    navBtn.classList.remove('transform-nav-btn')
+    navBtn.classList.remove("transform-nav-btn");
   }
-}
+};

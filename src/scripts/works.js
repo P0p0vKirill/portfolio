@@ -6,13 +6,15 @@ function changeURLLanguage() {
   location.href = window.location.pathname + "#" + lang;
   location.reload();
 }
+
 function changeLanguage() {
   let hash = window.location.hash;
+  if(!hash) return
   hash = hash.slice(1);
-  if (!allLangs.includes(hash)) {
-    location.href = window.location.pathname + "#ru";
-    location.reload();
-  }
+  // if (!allLangs.includes(hash)) {
+  //   location.href = window.location.pathname + "#ru";
+  //   // location.reload();
+  // }
   select.value = hash;
   for (key in langArr) {
     let el = document.querySelector(".lng-" + key);
@@ -20,30 +22,6 @@ function changeLanguage() {
   }
 }
 changeLanguage();
-
-// coloring text
-// (function titleСoloring() {
-//   let wordsArr = ["Frontend-разработкой", "Frontend development"];
-//   let title = document.querySelector(".lng-header-title");
-//   for (let phrase of wordsArr) {
-//     if (title.innerHTML.includes(phrase))
-//       title.innerHTML = title.innerHTML.replace(
-//         phrase,
-//         `<span style="color:#C778DD">${phrase}</span>`
-//       );
-//   }
-// })();
-
-
-// button-contact-me
-
-// const contactMe = document.querySelector('.contact-me')
-// const formSend = document.querySelector('.form-send-email')
-// contactMe.addEventListener('click', contactMeNone);
-// function contactMeNone() {
-//   contactMe.classList.add('inactive')
-//   formSend.classList.remove('inactive')
-// }
 
 // nav-btn
 const nav = document.querySelector("#nav");
