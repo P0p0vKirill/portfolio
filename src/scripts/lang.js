@@ -1,4 +1,4 @@
-const langArr = {
+export const langArr = {
   main: {
     ru: "главная",
     en: "home",
@@ -16,8 +16,8 @@ const langArr = {
     en: "contacts",
   },
   "header-title": {
-    ru: "Привет, я Кирилл! С 2023 года занимаюсь Frontend-разработкой.",
-    en: "Hi, I'm Kirill! I have been engaged in Frontend development since 2023.",
+    ru: "Привет, я Кирилл! С 2023 года занимаюсь <span style='color:#C778DD'>Frontend-разработкой</span>.",
+    en: "Hi, I'm Kirill! I have been engaged in <span style='color:#C778DD'>Frontend development</span> since 2023.",
   },
   "header-annotation": {
     ru: "Люблю превращать код в удобные и красивые интерфейсы, а ещё - верю, что идеальный border-radius существует.",
